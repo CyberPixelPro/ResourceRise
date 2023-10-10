@@ -40,6 +40,9 @@ nav h4 {
 .card-header {
     background-color: #00000021;
 }
+#pghead {
+    margin: 2rem 0rem 1rem 0rem;
+}
 @media screen and (max-width: 1020px) {
     .subject-div h5 {
         font-size: 1rem;

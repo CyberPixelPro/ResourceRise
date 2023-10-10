@@ -47,6 +47,6 @@ def module(module_code):
     resources = get_resources_module(module_code)
     resource_html = module_html_gen(resources)
 
-    return render_template("module.html", SUBJECT=resources["name"]).replace(
-        "RESOURCE_HTML", resource_html
-    )
+    return render_template(
+        "module.html", MODULE_ID=(resources["name"] + " " + module_code)
+    ).replace("RESOURCE_HTML", resource_html)
