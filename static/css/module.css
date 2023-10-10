@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #7431f9;
+}
+
+nav svg {
+    margin-right: 10px;
+}
+nav h4 {
+    margin: 0px;
+}
+
+.subject-div h5 {
+    margin: 0px;
+    font-size: 1.1rem;
+}
+.subject-div h6 {
+    margin: 0px;
+    font-size: 1rem;
+}
+#card-body-pre {
+    height: 100%;
+    width: 100%;
+}
+.big-card1 {
+    margin-right: 0.5rem;
+}
+.big-card2 {
+    margin-left: 0.5rem;
+}
+.subject-div2 {
+    margin-top: 1rem;
+}
+#main-div {
+    padding: 2% 5%;
+}
+.card-header {
+    background-color: #00000021;
+}
+@media screen and (max-width: 1020px) {
+    .subject-div h5 {
+        font-size: 1rem;
+    }
+    .subject-div h6 {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 960px) {
+    .subject-div h5 {
+        font-size: 0.9rem;
+    }
+    .subject-div h6 {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .big-card1 {
+        margin-right: 0rem;
+    }
+    .big-card2 {
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .subject-div h5 {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 370px) {
+    .subject-div h5 {
+        font-size: 0.8rem;
+    }
+    .subject-div h6 {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 280px) {
+    .subject-div h5 {
+        font-size: 0.7rem;
+    }
+    .subject-div h6 {
+        font-size: 0.6rem;
+    }
+}
