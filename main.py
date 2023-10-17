@@ -1,7 +1,7 @@
 # Importing the libraries/modules
 
 from utils.db import get_resources_module, get_subject_modules, get_subjects
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from utils.htmlgen import (
     index_html_gen,
     module_html_gen,
@@ -50,3 +50,10 @@ def module(module_code):
     return render_template(
         "module.html", MODULE_ID=(resources["name"] + " " + module_code)
     ).replace("RESOURCE_HTML", resource_html)
+
+
+# Preview page route
+@app.route("/preview")
+def preview():
+    url = request.args.get("url")
+    return render_template("preview.html").replace("URLL", url)

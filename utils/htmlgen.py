@@ -101,11 +101,21 @@ def module_html_gen(resources: dict):
         if key in ("_id", "name", "mid"):
             continue
 
-        html_inside = ""
+        if key == "yt":
+            html_inside = ""
 
-        for i in val:
-            html_inside += resource_inside_html.format(i[1], i[0].title())
+            for i in val:
+                html_inside += resource_inside_html.format(i[1], i[0].title())
 
-        html += resource_html.format(key.upper(), html_inside)
+            html += resource_html.format(key.upper(), html_inside)
+        else:
+            html_inside = ""
+
+            for i in val:
+                html_inside += resource_inside_html.format(
+                    "/preview?url=" + i[1], i[0].title()
+                )
+
+            html += resource_html.format(key.upper(), html_inside)
 
     return html
